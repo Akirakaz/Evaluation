@@ -1,0 +1,22 @@
+
+body{
+  background: black;
+}
+
+.fixed-top{
+  max-height: 20px;
+}
+
+:hover.navbar-toggler{
+  border: solid 2px;
+  color: white; 
+}
+
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+

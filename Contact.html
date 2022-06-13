@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <title>Manga Universe - Inscription</title>
+    <meta name="description" content="Création d'un compte"/>
+    <meta name="viewport" content="user-scalable=yes,width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="Accueil.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body style="background-color:black">
+  <div class="modal fade" tabindex="-1" role="dialog" id="contact">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Connexion</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" class="form-control">    
+            </div>
+            <div class="from-group">
+              <label for="Password">Mot de passe</label>
+              <input id="Password" name="Password" type="text" class="form-control">    
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="container-fluid">
+    <nav class="navbar navbar-dark fixed-top" style="background-color: rgb(189, 15, 15) ;padding-top: 0px;">
+      <div class="container-fluid rounded" style="background-color: rgb(189, 15, 15); max-height: 150px; padding-left: 0px; padding-top: 0px;">
+        <div class="col-2">
+          <img src="Tori.jpeg" href="Accueil.html" class="img-thumbnail" alt="Tori" style="width:80px; height: 80px;">
+        </div>
+        <a class="navbar-brand navbar-expand-md" style="color: white; font-size: 2rem" href="Accueil.html">Manga Universe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <img src="LogoAka.png" style="width: 40px;"/>
+        </button>
+        <div class="offcanvas offcanvas-end rounded" data-bs-scroll="true" style="width: 200px; background-color: rgb(189, 15, 15)" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:white;">Manga Universe</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:white;" aria-current="page" href="Accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white;" href="Events.html">Evenements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white;" href="Contact.html">Inscription</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="color:white;" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prochainement
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="Product.html">Produits</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="ShopCart.html">Panier <i class="bi bi-cart3"></i></a></li>
+                  
+                </ul>
+              </li>
+            </ul><br>
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+              <button type="button" class="btn btn-success btn-sm" href="#contact" data-toggle="modal" data-target="#contact">Connexion</button>
+            </div>   
+          </div>
+        </div>
+      </div><br>
+    </nav>
+    <form style="padding-top: 100px">
+      <h2 style="color:rgb(189, 15, 15)">
+        Inscription
+        <img src="SalutGoku.jpeg" class="rounded float-end" style="height: 100px; width: 150px; margin-top: 56px;" />
+      </h2>
+      <div class="row" style="padding-top: 50px">
+        <div class="form-group col-6">
+          <label for="inputEmail" style="color:white">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-group col-6">
+          <label for="inputPassword" style="color:white">Mot de Passe</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Mot de passe">
+        </div>
+      </div><br>
+      <div class="form-group">
+        <label for="inputAddress" style="color:white">Addresse</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="123 Rue George ...">
+      </div><br>
+      <div class="form-group">
+        <label for="inputAddress2" style="color:white">Complément d'adresse</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Numéro appartement, batiment, étage ... ">
+      </div><br>
+     
+      <div class="row">
+        <div class="form-group col-2">
+          <label for="inputZip" style="color:white">CP</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="form-group col-6">
+          <label for="inputCity" style="color:white">Ville</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-4">
+          <label for="inputState" style="color:white">Pays</label>
+          <select id="inputState" class="form-control">
+            <option selected>France</option>
+            <option>Italie</option>
+            <option>Royaume-Uni</option>
+            <option>Espagne</option>
+            <option>Allemagne</option>
+          </select>
+        </div>
+      </div><br>
+      <button type="submit" class="btn btn-primary" >Envoyer</button>
+    </form><br>
+  </main>
+  <footer class="mt-auto footer" style="max-height:80px;">
+    <div class="container-fluid rounded" style="background-color: rgb(189, 15, 15);">
+      <div class="row align-items-center" style="background-color: rgb(189, 15, 15);">
+        <div class="col-2" style="padding-left:0px;">
+          <img src="Tori.jpeg" class="img-thumbnail" alt="Tori" style="width:80px; height: 80px;"/>
+        </div>
+        <div class="col-5 text-center">
+          <h6 class="widget-title" style="font-size: 3vw; color:rgb(253, 253, 253)">Suivez-nous sur les reseaux sociaux</h6>
+        </div>
+        <div class="col-4 text-center ">
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.facebook.fr" role="button">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.github.com" role="button">
+            <i class="bi bi-github"></i>
+          </a>
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.twitter.com" role="button">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+        <div class="col-1" style="padding-right:5px">
+          <a class="btn btn-light rounded-pill" style="font-size: 2vw" href="Contact.html" role="button">
+            <i class="bi bi-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script 
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>

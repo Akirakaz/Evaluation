@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Manga Universe - La boutique référence des Mangas ! Manga, figurines, jeux vidéos, goodies etc ...</title>
+  <meta name="description" content="Manga, figurines, jeux vidéos, goodies à prix bas !!"/>
+  <meta name="viewport" content="user-scalable=yes,width=device-width,minimum-scale=1,initial-scale=1">
+  <link href="Accueil.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body style="background-color:black">
+  <div class="modal fade" tabindex="-1" role="dialog" id="contact">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Connexion</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" class="form-control">    
+            </div>
+            <div class="from-group">
+              <label for="Password">Mot de passe</label>
+              <input id="Password" name="Password" type="text" class="form-control">    
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalPanier" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Artcile ajouté au panier</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="dropdown">
+            <select class="form-select" aria-label="Quantité">
+              <option selected>Quantité</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-secondary"  href="Product.html">Valider et continuer</a>
+          <a class="btn btn-primary" href="ShopCart.html">Aller au panier</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="container-fluid ">
+    <nav class="navbar navbar-dark fixed-top" style="background-color: rgb(189, 15, 15) ;padding-top: 0px;">
+      <div class="container-fluid rounded" style="background-color: rgb(189, 15, 15); max-height: 150px; padding-left: 0px; padding-top: 0px;">
+        <div class="col-2">
+          <img src="Tori.jpeg" href="Accueil.html" class="img-thumbnail" alt="Tori" style="width:80px; height: 80px;">
+        </div>
+        <a class="navbar-brand navbar-expand-md" style="color: white; font-size: 2rem" href="Accueil.html">Manga Universe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <img src="LogoAka.png" style="width: 40px;"/>
+        </button>
+        <div class="offcanvas offcanvas-end rounded" data-bs-scroll="true" style="width: 200px; background-color: rgb(189, 15, 15)" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:white;">Manga Universe</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:white;" aria-current="page" href="Accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white;" href="Events.html">Evenements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white;" href="Contact.html">Inscription</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="color:white;" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prochainement
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="Product.html">Produits</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="ShopCart.html">Panier <i class="bi bi-cart3"></i></a></li>
+                  
+                </ul>
+              </li>
+            </ul><br>
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+              <button type="button" class="btn btn-success btn-sm" href="#contact" data-toggle="modal" data-target="#contact">Connexion</button>
+            </div>   
+          </div>
+        </div>
+      </div><br>
+    </nav>
+    <div style="padding-top:100px;">
+      <h2 style="color: rgb(189, 15, 15)">Produits</h2><hr style="color:lightgrey">
+      <h4 style="color:white; text-align:center; padding-bottom: 10px;"><img src="icone-sasuke.png" />Manga <img src="icone-naruto.png"/></h4>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div id="carouselNaruto" class="carousel slide" data-bs-ride="carousel">
+          <h4 style="color: rgb(189, 15, 15); text-align: center;">Naruto</h4>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="NarutoTome1.jpeg" class="rounded mx-auto d-block" alt="NarutoTome1" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 1</h5>
+                  <p class="card-text">
+                    3€
+                  </p>   
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>             
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="NarutoTome2.jpeg" class="rounded mx-auto d-block" alt="NarutoTome2" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 2</h5>
+                  <p class="card-text">
+                    3€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>                
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="NarutoTome3.jpeg" class="rounded mx-auto d-block" alt="NarutoTome3" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 3</h5>
+                  <p class="card-text">
+                    3€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>                
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselNaruto" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselNaruto" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselDBS" class="carousel slide" data-bs-ride="carousel">
+          <h4 style="color: rgb(189, 15, 15); text-align: center;">Dragonball Super</h4>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="DBSTome1.jpeg" class="rounded mx-auto d-block" alt="DBSTome1" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 1</h5>
+                  <p class="card-text">
+                    6.90€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>                
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="DBSTome2.jpeg" class="rounded mx-auto d-block" alt="DBSTome2" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 2</h5>
+                  <p class="card-text">
+                    6.90€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>                
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="DBSTome3.jpeg" class="rounded mx-auto d-block" alt="DBSTome3" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 3</h5>
+                  <p class="card-text">
+                    6.90€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>                
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselDBS" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselDBS" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselOnePiece" class="carousel slide" data-bs-ride="carousel">
+          <h4 style="color: rgb(189, 15, 15);text-align: center;">One Piece</h4>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="OnePieceTome1.jpeg" class="rounded mx-auto d-block" alt="OPTome1" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 1</h5>
+                  <p class="card-text">
+                    6.90€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>               
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="OnePieceTome2.jpeg" class="rounded mx-auto d-block" alt="OPTome2" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 2</h5>
+                  <p class="card-text">
+                    6.90€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>                
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mb-3 mb-lg-0" style="padding-top:10px">
+                <img src="OnePieceTome3.jpeg" class="rounded mx-auto d-block" alt="OPTome3" style="width:200px; height: 300px; border: solid 1px;">
+                <div class="card-body">
+                  <h5 class="card-title">Tome 3</h5>
+                  <p class="card-text">
+                    6.90€
+                  </p>
+                  <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                    Ajouter au panier
+                  </button>                
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselOnePiece" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselOnePiece" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div><br>
+    <div class="card mb-3 mb-lg-3">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex flex-row align-items-center">
+            <div>
+              <img
+                src="CollectionTomeNaruto.jpeg"
+                class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+            </div>
+            <div class="ms-3">
+              <h5>Collection tome 1 à 35 Naruto Edition HOKAGE</h5>
+              <p class="small mb-0">Edition Kana</p>
+            </div>
+          </div>
+          <div class="d-flex flex-row align-items-center">
+            <div style="width: 80px;">
+              <h5 class="mb-0">525€</h5>
+            </div>
+            <button type="button" class="btn btn-primary float-end disabled" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+              Bientot disponible
+            </button>          
+          </div>
+        </div>
+      </div>
+    </div><hr style="color:lightgrey">
+    <h4 style="color:white; text-align:center; padding-bottom: 10px;"><img src="icone-sasuke.png" />Figurines Tsume<img src="icone-naruto.png"/></h4>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <div id="carouselFigurineNaruto" class="carousel slide" data-bs-ride="carousel">
+          <h4 style="color: rgb(189, 15, 15); text-align: center;">Naruto</h4>
+          <div class="card">
+            <div class="card-header">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsume1.jpeg" class="rounded mx-auto d-block" alt="NarutoTome1" style="width:300px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsume2.jpeg" class="rounded mx-auto d-block" alt="NarutoTome2" style="width:300px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsume3.jpeg" class="rounded mx-auto d-block" alt="NarutoTome3" style="width:300px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Naruto Tsume Kyubi</h5>
+              <p class="card-text">
+                599€
+              </p>
+              <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                Ajouter au panier
+              </button>            
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFigurineNaruto" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFigurineNaruto" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselFigurineDBS" class="carousel slide" data-bs-ride="carousel">
+          <h4 style="color: rgb(189, 15, 15); text-align: center;">Dragonball</h4>
+          <div class="card">
+            <div class="card-header">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsumedbs1.jpeg" class="rounded mx-auto d-block" alt="DBSfig1" style="width:300px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsumedbs2.jpeg" class="rounded mx-auto d-block" alt="DBSfig2" style="width:300px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsumedbs3.jpeg" class="rounded mx-auto d-block" alt="DBSfig3" style="width:300px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Tsume Broly</h5>
+              <p class="card-text">
+                850€
+              </p>
+              <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                Ajouter au panier
+              </button>            
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFigurineDBS" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFigurineDBS" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div id="carouselFigurineSNK" class="carousel slide" data-bs-ride="carousel">
+          <h4 style="color: rgb(189, 15, 15); text-align: center;">L'Attaque des Titans</h4>
+          <div class="card">
+            <div class="card-header">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsumeSNK1.png" class="rounded mx-auto d-block" alt="SNKfig1" style="width:350px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsumeSNK2.png" class="rounded mx-auto d-block" alt="SNKfig2" style="width:350px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card mb-3 mb-lg-0" style="padding-top:10px; padding-bottom: 10px;">
+                    <img src="tsumeSNK3.png" class="rounded mx-auto d-block" alt="SNKfig3" style="width:350px; height: 300px; border: solid 1px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Livai VS Titan Bestial</h5>
+              <p class="card-text">
+                599€
+              </p>
+              <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+                Ajouter au panier
+              </button>            
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselFigurineSNK" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselFigurineSNK" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    <br><hr style="color:lightgrey">
+    <h4 style="color:white; text-align:center; padding-bottom: 10px;"><img src="icone-sasuke.png" />Jeux vidéos<img src="icone-naruto.png"/></h4>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+      <div class="card" style="background-color:black">
+        <div class="card mb-3 mb-lg-0">
+          <div class="card-header">
+            <img src="OnePiecePirate.jpeg" class="rounded mx-auto d-block" alt="One Piece Pirate Warrior 4" style="width:300px; height: 400px; margin-top: 10px">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">One Piece Pirate Warrior 4</h5>
+            <p class="card-text">PS4 50€</p>
+            <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+              Ajouter au panier
+            </button>        
+          </div>
+        </div>
+      </div>
+      <div class="card" style="background-color:black">
+        <div class="card mb-3 mb-lg-0">
+          <div class="card-header">
+            <img src="NarutoStorm.webp" class="rounded mx-auto d-block" alt="Naruto Ultimate Ninja Storm 4" style="width:300px; height: 400px; margin-top: 10px">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Naruto Ultimate Ninja Storm 4</h5>
+            <p class="card-text">PS4 50€</p>
+            <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+              Ajouter au panier
+            </button>        
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="background-color:black">
+        <div class="card mb-3 mb-lg-0">
+          <div class="card-header">
+            <img src="DBZKakarot.jpg" class="rounded mx-auto d-block" alt="Dragonball Kakarot" style="width:300px; height: 400px; margin-top: 10px">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Dragonball Kakarot</h5>
+            <p class="card-text">PS4 50€</p>
+            <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+              Ajouter au panier
+            </button>        
+          </div>
+        </div>
+      </div>
+      
+      <div class="card" style="background-color:black">
+        <div class="card mb-3 mb-lg-0" >
+          <div class="card-header">
+            <img src="JumpForce.jpg" class="rounded mx-auto d-block" alt="Jump Force" style="width:300px; height: 400px; margin-top: 10px">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Jump Force</h5>
+            <p class="card-text">PS4 20€</p>
+            <button type="button" class="btn btn-primary float-end" href="#modalPanier" data-toggle="modal" data-target="#modalPanier">
+              Ajouter au panier
+            </button>        
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+  <footer class="mt-auto " style="max-height:80px;">
+    <div class="container-fluid rounded" style="background-color: rgb(189, 15, 15);">
+      <div class="row align-items-center" style="background-color: rgb(189, 15, 15);">
+        <div class="col-2" style="padding-left:0px;">
+          <img src="Tori.jpeg" class="img-thumbnail" alt="Tori" style="width:80px; height: 80px;"/>
+        </div>
+        <div class="col-5 text-center">
+          <h6 class="widget-title" style="font-size: 3vw; color:rgb(253, 253, 253)">Suivez-nous sur les reseaux sociaux</h6>
+        </div>
+        <div class="col-4 text-center ">
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.facebook.fr" role="button">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.github.com" role="button">
+            <i class="bi bi-github"></i>
+          </a>
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.twitter.com" role="button">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+        <div class="col-1" style="padding-right:5px">
+          <a class="btn btn-light rounded-pill" style="font-size: 2vw" href="Product.html" role="button">
+            <i class="bi bi-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script 
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <title>Manga Universe - La référence des Mangas</title>
+  <meta name="description" content="News Films Dragonball Super, OnePiece, My Hero Academia - Top 5 des Mangas de 2022 - Manga, Jeux vidéos, Goodies etc"/>
+  <meta name="viewport" content="user-scalable=yes,width=device-width,minimum-scale=1,initial-scale=1">
+  <link href="Accueil.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body style="background-color:black">
+  <div class="modal fade" tabindex="-1" role="dialog" id="contact">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Connexion</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" class="form-control">    
+            </div>
+            <div class="from-group">
+              <label for="Password">Mot de passe</label>
+              <input id="Password" name="Password" type="text" class="form-control">    
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="container-fluid ">
+    <nav class="navbar navbar-dark fixed-top" style="background-color: rgb(189, 15, 15) ;padding-top: 0px;">
+      <div class="container-fluid rounded" style="background-color: rgb(189, 15, 15); max-height: 150px; padding-left: 0px; padding-top: 0px;">
+        <div class="col-2">
+          <img src="Tori.jpeg" href="Accueil.html" class="img-thumbnail" alt="Tori" style="width:80px; height: 80px;">
+        </div>
+        <a class="navbar-brand navbar-expand-md" style="color: white; font-size: 2rem" href="Accueil.html">Manga Universe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <img src="LogoAka.png" style="width: 40px;"/>
+        </button>
+        <div class="offcanvas offcanvas-end rounded" data-bs-scroll="true" style="width: 200px; background-color: rgb(189, 15, 15)" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color:white;">Manga Universe</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" style="color:white;" aria-current="page" href="Accueil.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white;" href="Events.html">Evenements</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white;" href="Contact.html">Inscription</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  style="color:white;" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Prochainement
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="Product.html">Produits</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="ShopCart.html">Panier <i class="bi bi-cart3"></i></a></li>
+                  
+                </ul>
+              </li>
+            </ul><br>
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+              <button type="button" class="btn btn-success btn-sm" href="#contact" data-toggle="modal" data-target="#contact">Connexion</button>
+            </div>   
+          </div>
+        </div>
+      </div><br>
+    </nav>
+
+    <div style="padding-top:100px;">
+      <h2 style="color: rgb(189, 15, 15)">Nouveautés</h2>
+      <div id="carouselNews" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselNews" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="DBS.jpeg" class="d-block w-100" alt="DBS" href="https://www.youtube.com/watch?v=t5CIs0jDqC8">
+            <div class="carousel-caption">
+              <a label="Dragonball Super : SuperHero" href="https://www.youtube.com/watch?v=t5CIs0jDqC8">
+                <button class="btn" style="background-color:rgb(189, 15, 15); color:white;">Bande annonce : Dragonball Super - SuperHero</button>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="OnepieceFilm.jpeg" class="d-block w-100" alt="OnePieceFilm">
+            <div class="carousel-caption">
+              <a href="https://www.youtube.com/watch?v=kgM3KEuw1fw">
+                <button class="btn" style="background-color:rgb(189, 15, 15); color:white;">Bande annonce : One Piece - Red</button>
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="MHAFilm.jpeg" class="d-block w-100" alt="MHAFilm">
+            <div class="carousel-caption">
+              <a href="https://www.youtube.com/watch?v=YElpwsFVIfQ">
+                <button class="btn" style="background-color:rgb(189, 15, 15); color:white;">Bande annonce : My Hero Academia - World Heroes Mission</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNews" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselNews" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div><hr style="color:lightgrey">
+    <div>
+      <div>
+        <p style="color:white">
+          Un site pour approfondir la culture du manga à travers toutes ses formes . Manga , Jeux videos , Cosplay, Goodies etc ... 
+        </p>
+      </div>
+      <h2 style="color:rgb(189, 15, 15)">Top 5 des mangas les plus connus</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+        <article class="col p-2">
+          <div class="card">
+            <img src="Naruto.jpeg" class="card-img-top rounded-lg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Naruto</h5>
+              <p class="card-text">
+                Naruto (ナルト?) est un shōnen manga écrit et dessiné par Masashi Kishimoto.
+                Naruto a été prépublié dans l'hebdomadaire Weekly Shōnen Jump de l'éditeur Shūeisha entre septembre 1999 et novembre 2014.
+                La série a été compilée en 72 tomes. La version française du manga est publiée par Kana entre mars 2002 et novembre 2016.
+              </p>
+              <a href="https://fr.wikipedia.org/wiki/Naruto" class="btn btn-secondary">Lire la suite ...</a>
+            </div>
+          </div>
+        </article>
+        <article class="col p-2">
+          <div class="card">
+            <img src="DBZ.jpeg" class="card-img-top rounded-lg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Dragonball Super</h5>
+              <p class="card-text">
+                Dragon Ball Super (ドラゴンボール超スーパー, Doragon bōru sūpā?) est une série télévisée d'animation japonaise produite 
+                par le studio Toei Animation, diffusée du 5 juillet 2015 au 25 mars 2018 sur la chaîne Fuji TV. Akira Toriyama, 
+                auteur du manga Dragon Ball, est crédité en tant que scénariste et responsable du concept art des personnages de cette série,
+                qui fait office de suite directe à son œuvre.
+              </p>
+              <a href="https://fr.wikipedia.org/wiki/Dragon_Ball_Super" class="btn btn-secondary">Lire la suite ...</a>
+            </div>
+          </div>
+        </article>
+        <article class="col p-2">
+          <div class="card">
+            <img src="SNK.jpeg" class="card-img-top rounded-lg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">L'Attaque de Titans</h5>
+              <p class="card-text">
+                L’Attaque des Titans (進撃の巨人, Shingeki no Kyojin?, litt. Le Titan assaillant, souvent abrégé SnK) est un shōnen manga écrit
+                et dessiné par Hajime Isayama. Il est prépublié entre septembre 2009 et avril 2021 dans le magazine Bessatsu Shōnen Magazine puis compilé 
+                en trente-quatre volumes reliés par l’éditeur Kōdansha. La version française est publiée en intégralité par Pika Édition dans la collection seinen entre juin 2013 et octobre 2021.                        
+              </p>
+              <a href="https://fr.wikipedia.org/wiki/L%27Attaque_des_Titans" class="btn btn-secondary">Lire la suite ...</a>
+            </div>
+          </div>
+        </article>
+        <article class="col p-2">
+          <div class="card">
+            <img src="MHA.jpeg" class="card-img-top rounded-lg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">My Hero Academia</h5>
+              <p class="card-text">
+                My Hero Academia (僕のヒーローアカデミア, Boku no Hīrō Akademia?) est un shōnen manga écrit et dessiné par Kōhei Horikoshi.
+                Il est pré-publié depuis juillet 2014 dans le magazine Weekly Shōnen Jump de l'éditeur Shūeisha, et compte trente-quatre tomes en mai 2022. 
+                La version française est publiée par Ki-oon depuis avril 2016 et compte trente-deux tomes en avril 2022.
+              </p>
+              <a href="https://fr.wikipedia.org/wiki/My_Hero_Academia" class="btn btn-secondary">Lire la suite ...</a>
+            </div>
+          </div>
+        </article>
+        <article class="col p-2">
+          <div class="card">
+            <img src="OnePiece.jpeg" class="card-img-top rounded-lg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">One Piece</h5>
+              <p class="card-text">
+                One Piece est une série d'anime adaptée du manga homonyme créé et illustré par Eiichirō Oda. La série suit les aventures de Monkey D. Luffy, 
+                un jeune garçon accompagné de son fidèle équipage nommé l’« Équipage de Chapeau de paille ». Le rêve de Luffy est de devenir le prochain Roi des Pirates.
+                Pour arriver à cet exploit que beaucoup d'autres pirates convoitent, il lui faut entre autres découvrir le « One Piece », le fabuleux trésor que le légendaire Gol D. Roger a caché quelque part dans le vaste monde.
+              </p>
+              <a href="https://fr.wikipedia.org/wiki/Liste_des_%C3%A9pisodes_de_One_Piece" class="btn btn-secondary">Lire la suite ...</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-auto" style="max-height:80px;">
+    <div class="container-fluid rounded" style="background-color: rgb(189, 15, 15);">
+      <div class="row align-items-center" style="background-color: rgb(189, 15, 15);">
+        <div class="col-2" style="padding-left:0px;">
+          <img src="Tori.jpeg" class="img-thumbnail" alt="Tori" style="width:80px; height: 80px;"/>
+        </div>
+        <div class="col-5 text-center">
+          <h6 class="widget-title" style="font-size: 3vw; color:rgb(253, 253, 253)">Suivez-nous sur les reseaux sociaux</h6>
+        </div>
+        <div class="col-4 text-center ">
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.facebook.fr" role="button">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.github.com" role="button">
+            <i class="bi bi-github"></i>
+          </a>
+          <a class="btn btn-primary rounded-pill" style="font-size: 3vw" href="http://www.twitter.com" role="button">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+        <div class="col-1" style="padding-right:5px">
+          <a class="btn btn-light rounded-pill" style="font-size: 2vw" href="Accueil.html" role="button">
+            <i class="bi bi-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script 
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous">
+  </script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>
